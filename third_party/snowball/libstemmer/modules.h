@@ -5,7 +5,7 @@
  *
  * Modules included by this file are: arabic, basque, catalan, danish, dutch,
  * english, finnish, french, german, greek, hindi, hungarian, indonesian,
- * irish, italian, lithuanian, nepali, norwegian, porter, portuguese,
+ * irish, italian, lithuanian, nepali, norwegian, polish, porter, portuguese,
  * romanian, russian, serbian, spanish, swedish, tamil, turkish
  */
 
@@ -27,6 +27,7 @@
 #include "../src_c/stem_UTF_8_lithuanian.h"
 #include "../src_c/stem_UTF_8_nepali.h"
 #include "../src_c/stem_UTF_8_norwegian.h"
+#include "../src_c/stem_UTF_8_polish.h"
 #include "../src_c/stem_UTF_8_porter.h"
 #include "../src_c/stem_UTF_8_portuguese.h"
 #include "../src_c/stem_UTF_8_romanian.h"
@@ -123,6 +124,8 @@ static const struct stemmer_modules modules[] = {
   {"no", ENC_UTF_8, norwegian_UTF_8_create_env, norwegian_UTF_8_close_env, norwegian_UTF_8_stem},
   {"nor", ENC_UTF_8, norwegian_UTF_8_create_env, norwegian_UTF_8_close_env, norwegian_UTF_8_stem},
   {"norwegian", ENC_UTF_8, norwegian_UTF_8_create_env, norwegian_UTF_8_close_env, norwegian_UTF_8_stem},
+  {"pl", ENC_UTF_8, polish_UTF_8_create_env, polish_UTF_8_close_env, polish_UTF_8_stem},
+  {"polish", ENC_UTF_8, polish_UTF_8_create_env, polish_UTF_8_close_env, polish_UTF_8_stem},
   {"por", ENC_UTF_8, portuguese_UTF_8_create_env, portuguese_UTF_8_close_env, portuguese_UTF_8_stem},
   {"porter", ENC_UTF_8, porter_UTF_8_create_env, porter_UTF_8_close_env, porter_UTF_8_stem},
   {"portuguese", ENC_UTF_8, portuguese_UTF_8_create_env, portuguese_UTF_8_close_env, portuguese_UTF_8_stem},
@@ -169,6 +172,7 @@ static const char * algorithm_names[] = {
   "lithuanian", 
   "nepali", 
   "norwegian", 
+  "polish",
   "porter", 
   "portuguese", 
   "romanian", 

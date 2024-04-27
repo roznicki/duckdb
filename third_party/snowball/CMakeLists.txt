@@ -32,6 +32,7 @@ add_library(
   src_c/stem_UTF_8_lovins.c
   src_c/stem_UTF_8_nepali.c
   src_c/stem_UTF_8_norwegian.c
+  src_c/stem_UTF_8_polish.c
   src_c/stem_UTF_8_porter.c
   src_c/stem_UTF_8_portuguese.c
   src_c/stem_UTF_8_romanian.c
