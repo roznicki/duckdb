@@ -108,7 +108,7 @@ static int r_remove_nouns(struct SN_env * z) {
         if (!(len_utf8(z->p) > 7)) goto lab1;
         {   int c_test2 = z->c;
             z->I[0] = (len_utf8(z->p) - 5);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab1;
                 z->c = ret;
             }
@@ -127,7 +127,7 @@ static int r_remove_nouns(struct SN_env * z) {
             z->c = c_test2;
         }
         z->I[0] = (len_utf8(z->p) - 4);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab1;
             z->c = ret;
         }
@@ -143,7 +143,7 @@ static int r_remove_nouns(struct SN_env * z) {
         if (!(len_utf8(z->p) > 6)) goto lab5;
         {   int c_test4 = z->c;
             z->I[0] = (len_utf8(z->p) - 4);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab5;
                 z->c = ret;
             }
@@ -182,7 +182,7 @@ static int r_remove_nouns(struct SN_env * z) {
             z->c = c_test4;
         }
         z->I[0] = (len_utf8(z->p) - 4);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab5;
             z->c = ret;
         }
@@ -198,7 +198,7 @@ static int r_remove_nouns(struct SN_env * z) {
         if (!(len_utf8(z->p) > 6)) goto lab14;
         {   int c_test6 = z->c;
             z->I[0] = (len_utf8(z->p) - 4);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab14;
                 z->c = ret;
             }
@@ -206,7 +206,7 @@ static int r_remove_nouns(struct SN_env * z) {
             z->c = c_test6;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab14;
             z->c = ret;
         }
@@ -222,7 +222,7 @@ static int r_remove_nouns(struct SN_env * z) {
         if (!(len_utf8(z->p) > 5)) goto lab15;
         {   int c_test7 = z->c;
             z->I[0] = (len_utf8(z->p) - 3);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab15;
                 z->c = ret;
             }
@@ -253,7 +253,7 @@ static int r_remove_nouns(struct SN_env * z) {
             z->c = c_test7;
         }
         z->I[0] = (len_utf8(z->p) - 3);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab15;
             z->c = ret;
         }
@@ -269,7 +269,7 @@ static int r_remove_nouns(struct SN_env * z) {
         if (!(len_utf8(z->p) > 5)) goto lab22;
         {   int c_test9 = z->c;
             z->I[0] = (len_utf8(z->p) - 3);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab22;
                 z->c = ret;
             }
@@ -288,7 +288,7 @@ static int r_remove_nouns(struct SN_env * z) {
             z->c = c_test9;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab22;
             z->c = ret;
         }
@@ -304,7 +304,7 @@ static int r_remove_nouns(struct SN_env * z) {
         if (!(len_utf8(z->p) > 5)) return 0;
         {   int c_test11 = z->c;
             z->I[0] = (len_utf8(z->p) - 2);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) return 0;
                 z->c = ret;
             }
@@ -319,7 +319,7 @@ static int r_remove_nouns(struct SN_env * z) {
             z->c = c_test11;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) return 0;
             z->c = ret;
         }
@@ -339,7 +339,7 @@ static int r_remove_dimunitive(struct SN_env * z) {
         if (!(len_utf8(z->p) > 6)) goto lab1;
         {   int c_test2 = z->c;
             z->I[0] = (len_utf8(z->p) - 5);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab1;
                 z->c = ret;
             }
@@ -366,7 +366,7 @@ static int r_remove_dimunitive(struct SN_env * z) {
             z->c = c_test2;
         }
         z->I[0] = (len_utf8(z->p) - 5);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab1;
             z->c = ret;
         }
@@ -382,7 +382,7 @@ static int r_remove_dimunitive(struct SN_env * z) {
         if (!(len_utf8(z->p) > 6)) goto lab7;
         {   int c_test4 = z->c;
             z->I[0] = (len_utf8(z->p) - 4);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab7;
                 z->c = ret;
             }
@@ -401,7 +401,7 @@ static int r_remove_dimunitive(struct SN_env * z) {
             z->c = c_test4;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab7;
             z->c = ret;
         }
@@ -417,7 +417,7 @@ static int r_remove_dimunitive(struct SN_env * z) {
         if (!(len_utf8(z->p) > 4)) return 0;
         {   int c_test6 = z->c;
             z->I[0] = (len_utf8(z->p) - 2);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) return 0;
                 z->c = ret;
             }
@@ -432,7 +432,7 @@ static int r_remove_dimunitive(struct SN_env * z) {
             z->c = c_test6;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) return 0;
             z->c = ret;
         }
@@ -453,7 +453,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
         {   int c_test2 = z->c;
             if (!(eq_s(z, 3, s_33))) goto lab1;
             z->I[0] = ((z->l - z->c) - 3);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab1;
                 z->c = ret;
             }
@@ -468,7 +468,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
             z->c = c_test2;
         }
         z->bra = z->c;
-        {   int ret = skip_utf8(z->p, z->c, z->l, 3);
+        {   int ret = skip_utf8(z->p, z->c, z->l, 3, 0);
             if (ret < 0) goto lab1;
             z->c = ret;
         }
@@ -477,7 +477,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
             if (ret < 0) return ret;
         }
         z->I[0] = ((z->l - z->c) - 3);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab1;
             z->c = ret;
         }
@@ -494,7 +494,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
         {   int c_test4 = z->c;
             if (!(eq_s(z, 3, s_36))) goto lab4;
             z->I[0] = ((z->l - z->c) - 5);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab4;
                 z->c = ret;
             }
@@ -502,7 +502,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
             z->c = c_test4;
         }
         z->bra = z->c;
-        {   int ret = skip_utf8(z->p, z->c, z->l, 3);
+        {   int ret = skip_utf8(z->p, z->c, z->l, 3, 0);
             if (ret < 0) goto lab4;
             z->c = ret;
         }
@@ -511,7 +511,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
             if (ret < 0) return ret;
         }
         z->I[0] = (len_utf8(z->p) - 5);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab4;
             z->c = ret;
         }
@@ -527,7 +527,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 6)) goto lab5;
         {   int c_test5 = z->c;
             z->I[0] = (z->l - 4);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab5;
                 z->c = ret;
             }
@@ -535,7 +535,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
             z->c = c_test5;
         }
         z->I[0] = (len_utf8(z->p) - 4);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab5;
             z->c = ret;
         }
@@ -551,7 +551,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 5)) goto lab6;
         {   int c_test6 = z->c;
             z->I[0] = (len_utf8(z->p) - 3);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab6;
                 z->c = ret;
             }
@@ -578,7 +578,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
             z->c = c_test6;
         }
         z->I[0] = (len_utf8(z->p) - 3);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab6;
             z->c = ret;
         }
@@ -594,7 +594,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 5)) return 0;
         {   int c_test8 = z->c;
             z->I[0] = (len_utf8(z->p) - 2);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) return 0;
                 z->c = ret;
             }
@@ -602,7 +602,7 @@ static int r_remove_adjective_ends(struct SN_env * z) {
             z->c = c_test8;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) return 0;
             z->c = ret;
         }
@@ -622,7 +622,7 @@ static int r_remove_verbs_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 5)) goto lab1;
         {   int c_test2 = z->c;
             z->I[0] = (z->l - 3);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab1;
                 z->c = ret;
             }
@@ -630,7 +630,7 @@ static int r_remove_verbs_ends(struct SN_env * z) {
             z->c = c_test2;
         }
         z->I[0] = (len_utf8(z->p) - 3);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab1;
             z->c = ret;
         }
@@ -646,7 +646,7 @@ static int r_remove_verbs_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 5)) goto lab2;
         {   int c_test3 = z->c;
             z->I[0] = (len_utf8(z->p) - 3);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab2;
                 z->c = ret;
             }
@@ -685,7 +685,7 @@ static int r_remove_verbs_ends(struct SN_env * z) {
             z->c = c_test3;
         }
         z->I[0] = (len_utf8(z->p) - 3);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab2;
             z->c = ret;
         }
@@ -701,7 +701,7 @@ static int r_remove_verbs_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 3)) goto lab11;
         {   int c_test5 = z->c;
             z->I[0] = (len_utf8(z->p) - 2);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab11;
                 z->c = ret;
             }
@@ -740,7 +740,7 @@ static int r_remove_verbs_ends(struct SN_env * z) {
             z->c = c_test5;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab11;
             z->c = ret;
         }
@@ -756,7 +756,7 @@ static int r_remove_verbs_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 3)) return 0;
         {   int c_test7 = z->c;
             z->I[0] = (len_utf8(z->p) - 2);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) return 0;
                 z->c = ret;
             }
@@ -764,7 +764,7 @@ static int r_remove_verbs_ends(struct SN_env * z) {
             z->c = c_test7;
         }
         z->I[0] = (len_utf8(z->p) - 1);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) return 0;
             z->c = ret;
         }
@@ -784,7 +784,7 @@ static int r_remove_adverbs_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 4)) goto lab1;
         {   int c_test2 = z->c;
             z->I[0] = (len_utf8(z->p) - 3);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab1;
                 z->c = ret;
             }
@@ -799,7 +799,7 @@ static int r_remove_adverbs_ends(struct SN_env * z) {
             z->c = c_test2;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab1;
             z->c = ret;
         }
@@ -815,7 +815,7 @@ static int r_remove_adverbs_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 4)) return 0;
         {   int c_test4 = z->c;
             z->I[0] = (len_utf8(z->p) - 2);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) return 0;
                 z->c = ret;
             }
@@ -823,7 +823,7 @@ static int r_remove_adverbs_ends(struct SN_env * z) {
             z->c = c_test4;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) return 0;
             z->c = ret;
         }
@@ -843,7 +843,7 @@ static int r_remove_plural_forms(struct SN_env * z) {
         if (!(len_utf8(z->p) > 4)) goto lab1;
         {   int c_test2 = z->c;
             z->I[0] = (len_utf8(z->p) - 2);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab1;
                 z->c = ret;
             }
@@ -858,7 +858,7 @@ static int r_remove_plural_forms(struct SN_env * z) {
             z->c = c_test2;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab1;
             z->c = ret;
         }
@@ -874,7 +874,7 @@ static int r_remove_plural_forms(struct SN_env * z) {
         if (!(len_utf8(z->p) > 4)) return 0;
         {   int c_test4 = z->c;
             z->I[0] = (len_utf8(z->p) - 3);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) return 0;
                 z->c = ret;
             }
@@ -882,7 +882,7 @@ static int r_remove_plural_forms(struct SN_env * z) {
             z->c = c_test4;
         }
         z->I[0] = (len_utf8(z->p) - 3);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) return 0;
             z->c = ret;
         }
@@ -902,7 +902,7 @@ static int r_remove_general_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 4)) goto lab1;
         {   int c_test2 = z->c;
             z->I[0] = (len_utf8(z->p) - 2);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) goto lab1;
                 z->c = ret;
             }
@@ -917,7 +917,7 @@ static int r_remove_general_ends(struct SN_env * z) {
             z->c = c_test2;
         }
         z->I[0] = (len_utf8(z->p) - 2);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) goto lab1;
             z->c = ret;
         }
@@ -933,7 +933,7 @@ static int r_remove_general_ends(struct SN_env * z) {
         if (!(len_utf8(z->p) > 4)) return 0;
         {   int c_test4 = z->c;
             z->I[0] = (len_utf8(z->p) - 1);
-            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+            {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
                 if (ret < 0) return 0;
                 z->c = ret;
             }
@@ -972,7 +972,7 @@ static int r_remove_general_ends(struct SN_env * z) {
             z->c = c_test4;
         }
         z->I[0] = (len_utf8(z->p) - 1);
-        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0]);
+        {   int ret = skip_utf8(z->p, z->c, z->l, z->I[0], 0);
             if (ret < 0) return 0;
             z->c = ret;
         }
